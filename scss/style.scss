@@ -1,0 +1,23 @@
+.resume{
+    .alert {
+        display: none;
+    }
+}
+
+// .resume.invalid{
+//     input:invalid{
+//         border-color: red;
+//         & ~ .alert {
+//             display: block;
+//         }
+//     }
+// }
+
+.resume.invalid {
+  input.invalid {
+    border-color: red;
+    & ~ .alert {
+      display: block; 
+    }
+  }
+}
