@@ -5,10 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ДЗ 15.2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.scss" />
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-    
+  <div class="container">
+    <form class="resume">
+      <div class="form-group">
+        <label for="firstname">Имя</label>
+        <input
+          type="text" 
+          class="form-control" 
+          id="firstname"
+          name="firstname"
+          placeholder="Введите ваше имя..."
+          maxlength="30"
+          minlength="2"
+          required> 
+        <div class="alert alert-danger mt-2">Введите количество символов от 2 до 30</div>   
+      </div>      
+      <div class="form-group">
+        <label for="lastname">Фамилия</label>
+        <input
+          type="text" 
+          class="form-control" 
+          id="lastname"
+          name="lastname"
+          placeholder="Введите вашу фамилию..."
+          maxlength="30"
+          minlength="2"
+          required>
+        <div class="alert alert-danger mt-2">Введите количество символов от 2 до 30</div>
+      </div>
+      <div class="form-group">
+        <label for="age">Возраст</label>
+        <input
+          type="number" 
+          class="form-control" 
+          id="age"
+          name="age"
+          placeholder="Введите ваш возраст..."
+          maxlength="80"
+          minlength="12">
+        <div class="alert alert-danger mt-2">Введите корректный возраст от 18 до 99</div>
+      </div>
+      <div class="form-group">
+        <label for="gender">Пол</label> 
+        <input type="radio" name="gender" id="male" value="мужской"  > 
+        <label for="male">мужской</label>   
+        <input type="radio" name="gender" id="female" value="женский">
+        <label for="female">женский</label>
+        <div class="alert alert-danger mt-2">Введите верный пол</div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон</label>  
+        <input
+          type="tel"
+          class="form-control"
+          id="phone"
+          name="phone"
+          placeholder="Введите ваш телефон..."
+          maxlength="12"
+          minlength="7"
+          required>  
+        <div class="alert alert-danger mt-2">Введите телефон, используя цифры от 0 до 9</div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>  
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Введите ваш email...">
+        <div class="alert alert-danger mt-2">Введите правильную почту</div>
+      </div>
+      <div class="form-group">
+        <label for="about">О себе</label>
+        <textarea
+          class="form-control rounded-0" 
+          id="Textarea1" 
+          name="about"
+          maxlength="500"
+          minlength="5">
+        </textarea>
+        <div class="alert alert-danger mt-2">Расскажите о себе</div>
+      </div>
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input" 
+          id="acceptedTerms"
+          name="acceptedTerms"
+          required>
+        <label for="acceptedTerms">Принять условия</label>
+        <div class="alert alert-danger mt-2">Примите соглашение</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Подтвердить</button>
+    </form>
+  </div>
+
 
     
 </body>
