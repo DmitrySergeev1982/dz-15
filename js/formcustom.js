@@ -21,7 +21,7 @@ export class FormCustom {
   _submitForm(event) {
     console.log(event)
     event.preventDefault()
-
+  
     if(!this.form.checkValidity()) {
       this.form.classList.add('invalid')
     } else {

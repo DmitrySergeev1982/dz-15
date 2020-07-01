@@ -4,20 +4,24 @@
     }
 }
 
-// .resume.invalid{
-//     input:invalid{
-//         border-color: red;
-//         & ~ .alert {
-//             display: block;
-//         }
-//     }
-// }
-
-.resume.invalid {
-  input.invalid {
-    border-color: red;
-    & ~ .alert {
-      display: block; 
+.resume.invalid{
+    textarea,input:invalid{
+        border-color: rgb(241, 26, 26);
+        & ~ .alert {
+            display: block;
+        }
     }
-  }
 }
+
+
+
+
+
+// .resume.invalid {
+//   input.invalid {
+//     border-color: red;
+//     & ~ .alert {
+//       display: block; 
+//     }
+//   }
+// }
